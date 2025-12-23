@@ -1,13 +1,36 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { Helmet } from 'react-helmet-async';
+import Navigation from '@/components/Navigation';
+import HeroSection from '@/components/HeroSection';
+import AboutSection from '@/components/AboutSection';
+import GallerySection from '@/components/GallerySection';
+import ServicesSection from '@/components/ServicesSection';
+import MusicSection from '@/components/MusicSection';
+import { ContactSection, Footer } from '@/components/ContactSection';
 
 const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
-    </div>
+    <>
+      <Helmet>
+        <title>Padgsteen Guitars | Roger Padgett - Musician & Master Luthier</title>
+        <meta 
+          name="description" 
+          content="Handcrafted guitars and soulful Southern music from master luthier Roger Padgett. Custom builds, repairs, and live performances from the heart of Appalachia." 
+        />
+        <meta name="keywords" content="custom guitars, luthier, guitar repair, handcrafted guitars, Southern music, Roger Padgett, Padgsteen" />
+        <link rel="canonical" href="https://padgsteenguitars.com" />
+      </Helmet>
+      
+      <main className="min-h-screen">
+        <Navigation />
+        <HeroSection />
+        <AboutSection />
+        <GallerySection />
+        <ServicesSection />
+        <MusicSection />
+        <ContactSection />
+        <Footer />
+      </main>
+    </>
   );
 };
 
