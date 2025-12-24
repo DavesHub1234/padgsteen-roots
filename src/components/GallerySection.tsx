@@ -1,6 +1,8 @@
 import { useState } from 'react';
-import guitarAcoustic from '@/assets/guitar-acoustic.jpg';
-import guitarElectric from '@/assets/guitar-electric.jpg';
+import galleryAcoustic1 from '@/assets/gallery-acoustic-1.jpg';
+import galleryAcoustic2 from '@/assets/gallery-acoustic-2.jpg';
+import galleryElectric1 from '@/assets/gallery-electric-1.jpg';
+import galleryElectric2 from '@/assets/gallery-electric-2.jpg';
 
 interface GuitarItem {
   id: number;
@@ -16,28 +18,28 @@ const guitars: GuitarItem[] = [
     name: 'The Carolina',
     type: 'Acoustic',
     description: 'Rich mahogany body with mother of pearl inlays. Warm, resonant tone perfect for fingerpicking.',
-    image: guitarAcoustic,
+    image: galleryAcoustic1,
   },
   {
     id: 2,
     name: 'Sunburst Heritage',
     type: 'Electric',
     description: 'Quilted maple top with vintage sunburst finish. Classic rock tone with modern playability.',
-    image: guitarElectric,
+    image: galleryElectric1,
   },
   {
     id: 3,
     name: 'The Appalachian',
     type: 'Acoustic',
     description: 'Spruce top with rosewood back and sides. Crystal clear projection for stage performers.',
-    image: guitarAcoustic,
+    image: galleryAcoustic2,
   },
   {
     id: 4,
     name: 'Midnight Blues',
     type: 'Electric',
     description: 'Deep blue finish on alder body. Built for blues, rock, and everything in between.',
-    image: guitarElectric,
+    image: galleryElectric2,
   },
 ];
 
