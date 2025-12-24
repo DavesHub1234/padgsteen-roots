@@ -2,10 +2,8 @@ import { MapPin, Phone, Mail, Clock } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import vineBorder from '@/assets/vine-border.png';
 import logo from '@/assets/padgsteen-logo.png';
-
 const ContactSection = () => {
-  return (
-    <section id="contact" className="py-24 bg-background relative overflow-hidden">
+  return <section id="contact" className="py-24 bg-background relative overflow-hidden">
       {/* Background texture */}
       <div className="absolute inset-0 bg-wood-texture opacity-30" />
       
@@ -37,23 +35,13 @@ const ContactSection = () => {
                   <label htmlFor="name" className="block text-sm font-medium text-foreground mb-2">
                     Name
                   </label>
-                  <input
-                    type="text"
-                    id="name"
-                    className="w-full px-4 py-3 rounded-lg bg-background border border-input focus:border-caramel focus:ring-1 focus:ring-caramel outline-none transition-colors"
-                    placeholder="Your name"
-                  />
+                  <input type="text" id="name" className="w-full px-4 py-3 rounded-lg bg-background border border-input focus:border-caramel focus:ring-1 focus:ring-caramel outline-none transition-colors" placeholder="Your name" />
                 </div>
                 <div>
                   <label htmlFor="email" className="block text-sm font-medium text-foreground mb-2">
                     Email
                   </label>
-                  <input
-                    type="email"
-                    id="email"
-                    className="w-full px-4 py-3 rounded-lg bg-background border border-input focus:border-caramel focus:ring-1 focus:ring-caramel outline-none transition-colors"
-                    placeholder="your@email.com"
-                  />
+                  <input type="email" id="email" className="w-full px-4 py-3 rounded-lg bg-background border border-input focus:border-caramel focus:ring-1 focus:ring-caramel outline-none transition-colors" placeholder="your@email.com" />
                 </div>
               </div>
               
@@ -61,10 +49,7 @@ const ContactSection = () => {
                 <label htmlFor="subject" className="block text-sm font-medium text-foreground mb-2">
                   Subject
                 </label>
-                <select
-                  id="subject"
-                  className="w-full px-4 py-3 rounded-lg bg-background border border-input focus:border-caramel focus:ring-1 focus:ring-caramel outline-none transition-colors"
-                >
+                <select id="subject" className="w-full px-4 py-3 rounded-lg bg-background border border-input focus:border-caramel focus:ring-1 focus:ring-caramel outline-none transition-colors">
                   <option>Custom Guitar Build</option>
                   <option>Guitar Repair</option>
                   <option>Setup & Adjustment</option>
@@ -77,12 +62,7 @@ const ContactSection = () => {
                 <label htmlFor="message" className="block text-sm font-medium text-foreground mb-2">
                   Message
                 </label>
-                <textarea
-                  id="message"
-                  rows={4}
-                  className="w-full px-4 py-3 rounded-lg bg-background border border-input focus:border-caramel focus:ring-1 focus:ring-caramel outline-none transition-colors resize-none"
-                  placeholder="Tell us about your project or inquiry..."
-                />
+                <textarea id="message" rows={4} className="w-full px-4 py-3 rounded-lg bg-background border border-input focus:border-caramel focus:ring-1 focus:ring-caramel outline-none transition-colors resize-none" placeholder="Tell us about your project or inquiry..." />
               </div>
               
               <Button variant="hero" size="lg" className="w-full">
@@ -115,7 +95,7 @@ const ContactSection = () => {
                   </div>
                   <div>
                     <p className="font-medium text-foreground">Phone</p>
-                    <p className="text-muted-foreground">(555) 123-4567</p>
+                    <p className="text-muted-foreground">​(980) 525-1991 </p>
                   </div>
                 </div>
                 
@@ -125,7 +105,8 @@ const ContactSection = () => {
                   </div>
                   <div>
                     <p className="font-medium text-foreground">Email</p>
-                    <p className="text-muted-foreground">roger@padgsteenguitars.com</p>
+                    <p className="text-muted-foreground">
+                  </p>
                   </div>
                 </div>
                 
@@ -151,29 +132,22 @@ const ContactSection = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
 
 // Footer Component
 const Footer = () => {
-  return (
-    <footer className="bg-navy py-12 relative overflow-hidden">
+  return <footer className="bg-navy py-12 relative overflow-hidden">
       {/* Vine border */}
-      <div
-        className="absolute top-0 left-0 right-0 h-16 bg-contain bg-repeat-x opacity-30"
-        style={{ backgroundImage: `url(${vineBorder})` }}
-      />
+      <div className="absolute top-0 left-0 right-0 h-16 bg-contain bg-repeat-x opacity-30" style={{
+      backgroundImage: `url(${vineBorder})`
+    }} />
       
       <div className="container mx-auto px-4 relative pt-8">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           {/* Logo */}
           <div className="flex items-center gap-3">
-            <img
-              src={logo}
-              alt="Padgsteen Guitars"
-              className="h-10 w-10 rounded-full"
-            />
+            <img src={logo} alt="Padgsteen Guitars" className="h-10 w-10 rounded-full" />
             <span className="font-display text-lg text-cream">
               Padgsteen Guitars
             </span>
@@ -204,8 +178,6 @@ const Footer = () => {
           </p>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export { ContactSection, Footer };
