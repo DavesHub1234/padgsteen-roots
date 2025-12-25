@@ -1,6 +1,6 @@
 import { ExternalLink } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import rogerPerforming from '@/assets/roger-performing.jpg';
+import rogerCharacter from '@/assets/roger-character.jpg';
 
 const MusicSection = () => {
   // Placeholder Spotify embed - replace with actual artist ID
@@ -77,15 +77,14 @@ const MusicSection = () => {
             </div>
           </div>
           
-          {/* Image Column */}
-          <div className="relative">
-            <div className="relative rounded-xl overflow-hidden shadow-deep">
+          {/* Character Illustration Column */}
+          <div className="relative flex items-center justify-center">
+            <div className="relative">
               <img
-                src={rogerPerforming}
-                alt="Roger Padgett performing live"
-                className="w-full h-auto object-cover aspect-[4/5]"
+                src={rogerCharacter}
+                alt="Roger Padgett character illustration with guitar"
+                className="w-full max-w-md h-auto object-contain drop-shadow-2xl"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-navy/60 to-transparent" />
             </div>
             
             {/* Decorative elements */}
@@ -93,7 +92,7 @@ const MusicSection = () => {
             <div className="absolute -bottom-4 -left-4 w-24 h-24 bg-muscadine/20 rounded-xl -z-10" />
             
             {/* Quote overlay */}
-            <div className="absolute bottom-8 left-8 right-8 text-center">
+            <div className="absolute bottom-4 left-4 right-4 text-center bg-navy/80 backdrop-blur-sm rounded-lg py-4 px-6">
               <p className="font-display text-cream italic text-lg">
                 "Every song tells a story, every guitar has a soul."
               </p>

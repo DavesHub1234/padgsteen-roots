@@ -1,5 +1,5 @@
 import rogerPortrait from '@/assets/roger-portrait.jpg';
-import rogerPerforming from '@/assets/roger-performing.jpg';
+import rogerMotorcycle from '@/assets/roger-motorcycle.jpg';
 
 const AboutSection = () => {
   return (
@@ -22,12 +22,12 @@ const AboutSection = () => {
                 <div className="absolute inset-0 bg-gradient-to-t from-navy/40 to-transparent" />
               </div>
               
-              {/* Performing image - overlapping */}
-              <div className="absolute -bottom-8 -right-8 w-48 md:w-64 rounded-lg overflow-hidden shadow-warm border-4 border-background hidden md:block">
+              {/* Motorcycle illustration - overlapping */}
+              <div className="absolute -bottom-12 -right-8 w-56 md:w-72 hidden md:block drop-shadow-2xl">
                 <img
-                  src={rogerPerforming}
-                  alt="Roger performing live"
-                  className="w-full h-auto object-cover aspect-square"
+                  src={rogerMotorcycle}
+                  alt="Roger on motorcycle with guitar illustration"
+                  className="w-full h-auto object-contain"
                 />
               </div>
             </div>
