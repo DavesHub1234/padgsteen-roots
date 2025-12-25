@@ -22,19 +22,18 @@ const AboutSection = () => {
                 <div className="absolute inset-0 bg-gradient-to-t from-navy/40 to-transparent" />
               </div>
               
-              {/* Motorcycle illustration - overlapping */}
-              <div className="absolute -bottom-12 -right-8 w-56 md:w-72 hidden md:block drop-shadow-2xl">
+              {/* Motorcycle illustration - below portrait */}
+              <div className="mt-8 flex justify-center">
                 <img
                   src={rogerMotorcycle}
                   alt="Roger on motorcycle with guitar illustration"
-                  className="w-full h-auto object-contain"
+                  className="w-72 md:w-80 lg:w-96 h-auto object-contain drop-shadow-2xl"
                 />
               </div>
             </div>
             
             {/* Decorative elements */}
             <div className="absolute -top-4 -left-4 w-24 h-24 border-2 border-caramel/30 rounded-lg" />
-            <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-caramel/10 rounded-lg -z-10" />
           </div>
           
           {/* Content Column */}
