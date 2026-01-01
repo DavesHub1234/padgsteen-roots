@@ -91,6 +91,13 @@ const ServicesSection = () => {
           ))}
         </div>
         
+        {/* CTA Phone Number */}
+        <div className="text-center mt-12">
+          <p className="font-display text-2xl md:text-3xl text-foreground">
+            Call Today! <span className="font-bold text-caramel">(980) 525-1991</span>
+          </p>
+        </div>
+        
         {/* Decorative divider */}
         <div className="section-divider mt-16" />
       </div>
