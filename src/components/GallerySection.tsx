@@ -69,20 +69,21 @@ const GallerySection = () => {
         {/* Guitar Grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {guitars.map((guitar) => (
-            <div
+            <article
               key={guitar.id}
               className="group relative rounded-lg overflow-hidden bg-wood-dark cursor-pointer hover-lift"
               onMouseEnter={() => setHoveredId(guitar.id)}
               onMouseLeave={() => setHoveredId(null)}
             >
               {/* Image */}
-              <div className="aspect-square overflow-hidden">
+              <figure className="aspect-square overflow-hidden">
                 <img
                   src={guitar.image}
-                  alt={guitar.name}
+                  alt={`${guitar.name} - ${guitar.type} guitar handcrafted by Padgsteen Guitars`}
+                  loading="lazy"
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
-              </div>
+              </figure>
               
               {/* Overlay */}
               <div
@@ -107,7 +108,7 @@ const GallerySection = () => {
                   {guitar.description}
                 </p>
               </div>
-            </div>
+            </article>
           ))}
         </div>
         

@@ -6,7 +6,7 @@ import padgsteenLogo from '@/assets/padgsteen-logo.png';
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section role="banner" aria-label="Hero section - Roger Padgett, Musician and Master Luthier" className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
@@ -72,7 +72,7 @@ const HeroSection = () => {
       <a
         href="#about"
         className="absolute bottom-8 left-1/2 -translate-x-1/2 text-cream/60 hover:text-caramel transition-colors animate-float"
-        aria-label="Scroll down"
+        aria-label="Scroll to about section"
       >
         <ChevronDown className="h-8 w-8" />
       </a>

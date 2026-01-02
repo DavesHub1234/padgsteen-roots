@@ -25,6 +25,8 @@ const Navigation = () => {
 
   return (
     <nav
+      role="navigation"
+      aria-label="Main navigation"
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         isScrolled
           ? 'bg-navy/95 backdrop-blur-md shadow-deep py-2'
