@@ -53,6 +53,7 @@ const MusicSection = () => {
                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                 loading="lazy"
                 className="opacity-90"
+                title="Roger Padgett on Spotify - Listen to Southern folk and blues music"
               />
             </div>
             
@@ -79,13 +80,14 @@ const MusicSection = () => {
           
           {/* Character Illustration Column */}
           <div className="relative flex items-center justify-center">
-            <div className="relative">
+            <figure className="relative">
               <img
                 src={rogerCharacter}
-                alt="Roger Padgett character illustration with guitar"
+                alt="Stylized character illustration of Roger Padgett performing with acoustic guitar"
                 className="w-full max-w-md h-auto object-contain drop-shadow-2xl"
+                loading="lazy"
               />
-            </div>
+            </figure>
             
             {/* Decorative elements */}
             <div className="absolute -top-4 -right-4 w-32 h-32 border-2 border-caramel/30 rounded-xl -z-10" />

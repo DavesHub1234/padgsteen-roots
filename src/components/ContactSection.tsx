@@ -3,7 +3,7 @@ import vineBorder from '@/assets/vine-border.png';
 import logo from '@/assets/padgsteen-logo.png';
 
 const ContactSection = () => {
-  return <section id="contact" className="py-24 bg-background relative overflow-hidden">
+  return <section id="contact" aria-label="Contact Padgsteen Guitars" className="py-24 bg-background relative overflow-hidden">
       {/* Background texture */}
       <div className="absolute inset-0 bg-wood-texture opacity-30" />
       
@@ -47,7 +47,7 @@ const ContactSection = () => {
                   </div>
                   <div>
                     <p className="font-medium text-foreground">Call or Text</p>
-                    <p className="text-foreground text-2xl md:text-3xl font-bold tracking-wide">(980) 525-1991</p>
+                    <a href="tel:+19805251991" className="text-foreground text-2xl md:text-3xl font-bold tracking-wide hover:text-caramel transition-colors" aria-label="Call Padgsteen Guitars at (980) 525-1991">(980) 525-1991</a>
                   </div>
                 </div>
                 
@@ -89,7 +89,7 @@ const ContactSection = () => {
 
 // Footer Component
 const Footer = () => {
-  return <footer className="bg-navy py-12 relative overflow-hidden">
+  return <footer role="contentinfo" aria-label="Site footer" className="bg-navy py-12 relative overflow-hidden">
       {/* Vine border */}
       <div className="absolute top-0 left-0 right-0 h-16 bg-contain bg-repeat-x opacity-30" style={{
       backgroundImage: `url(${vineBorder})`
@@ -99,14 +99,14 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           {/* Logo */}
           <div className="flex items-center gap-3">
-            <img src={logo} alt="Padgsteen Guitars" className="h-10 w-10 rounded-full" />
+            <img src={logo} alt="Padgsteen Guitars logo" className="h-10 w-10 rounded-full" loading="lazy" />
             <span className="font-display text-lg text-cream">
               Padgsteen Guitars
             </span>
           </div>
           
           {/* Links */}
-          <nav className="flex flex-wrap gap-6 text-sm">
+          <nav aria-label="Footer navigation" className="flex flex-wrap gap-6 text-sm">
             <a href="#about" className="text-cream/60 hover:text-caramel transition-colors">
               About
             </a>

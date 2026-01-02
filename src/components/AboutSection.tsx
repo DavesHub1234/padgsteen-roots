@@ -16,20 +16,22 @@ const AboutSection = () => {
               <div className="relative rounded-lg overflow-hidden shadow-deep hover-lift">
                 <img
                   src={rogerPortrait}
-                  alt="Roger Padgett"
+                  alt="Roger Padgett - Master luthier and musician in his guitar workshop"
                   className="w-full h-auto object-cover aspect-square"
+                  loading="lazy"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-navy/40 to-transparent" />
               </div>
               
               {/* Motorcycle illustration - below portrait */}
-              <div className="mt-8 flex justify-center">
+              <figure className="mt-8 flex justify-center">
                 <img
                   src={rogerMotorcycle}
-                  alt="Roger on motorcycle with guitar illustration"
+                  alt="Artistic illustration of Roger Padgett riding motorcycle with guitar"
+                  loading="lazy"
                   className="w-72 md:w-80 lg:w-96 h-auto object-contain drop-shadow-2xl"
                 />
-              </div>
+              </figure>
             </div>
             
             {/* Decorative elements */}
